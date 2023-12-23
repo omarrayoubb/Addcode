@@ -1,0 +1,27 @@
+[Stream]: A series of data is referred to as a stream. In Java, Stream is 
+            classified into two types, i.e., Byte Stream and Character Stream.
+
+Byte stream: deals with byte data [binary data (0, 1)] b2dr mn 5elalha a2ra swr aw videos
+Character Stream: deals with character [data string only]
+createNewFile(): a method used to create new file
+___________________________________________________________________________________
+To write to a file
+we use FileWriter Class and write function
+FileWriter f0 = new FileWriter("path of the file");
+f0.write("what you need to write");
+# you must use IOException for any exception handling to not having any errors
+#don't forget to close the function
+___________________________________________________________________________________
+To read a file
+we use Scanner class and has next line function and close function
+File f0 = new File("path.txt");
+Scanner scan = new Scanner(f0);
+while (scan.hasNextLine())
+{
+    string name = scan.nextLine();
+
+}
+scan.close()
+#don't forget file not found Exception
+___________________________________________________________________________________
+Stream : is the channel between the program and the file 
